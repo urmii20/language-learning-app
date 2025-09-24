@@ -1,0 +1,17 @@
+{
+  "name": "language-learning-app",
+  "version": "1.0.0",
+  "description": "MERN stack language learning application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install-all": "npm run install-server && npm run install-client"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
